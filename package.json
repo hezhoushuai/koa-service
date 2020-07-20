@@ -1,0 +1,40 @@
+{
+  "name": "koa-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=devlopment nodemon --exec babel-node --inspect ./src/index.js",
+    "clean": "rimraf dist",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.prod.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-combine-routers": "^4.0.2",
+    "koa-compose": "^4.1.0",
+    "koa-compress": "^5.0.1",
+    "koa-helmet": "^5.2.0",
+    "koa-json": "^2.0.2",
+    "koa-router": "^9.1.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4",
+    "terser-webpack-plugin": "^3.0.7",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.0.9",
+    "webpack-node-externals": "^2.5.0"
+  }
+}
